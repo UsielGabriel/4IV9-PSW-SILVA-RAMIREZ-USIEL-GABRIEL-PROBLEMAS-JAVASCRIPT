@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Problema 3</title>
+    <script src="JS/problema3.js"></script>
+    <link rel="stylesheet" href="CSS/estilos.css">
 </head>
 <body>
     <!--
@@ -12,5 +14,148 @@
         y un cliente desea saber cuamto debera pagar finalmente por su 
         compra
     -->
+    <div class="contenedor_navegacion">
+        <div class="navegacion_top">
+            <h1>Problemas</h1>
+        </div>
+        <input type="checkbox" id="hamburguesa">
+        <label for="hamburguesa" class="label_menu menu_boton_bars">
+            <span id="span_1"></span>
+            <span id="span_2"></span>
+            <span id="span_3"></span>
+        </label>
+        <div class="navegacion_bottom mostrar ">
+            <div class="menu">
+                <div>
+                    <a class="boton_0" href="index.html">Inicio</a><br>
+                </div>                
+                <div>
+                    <a class="boton_1" href="problema1.html">problema1</a><br>
+                </div>
+                <div>
+                    <a class="boton_2" href="problema2.html">problema2</a><br>
+                </div>
+                <div>
+                    <a class="boton_3" href="problema3.html">problema3</a><br>
+                </div>
+                <div>
+                    <a class="boton_4" href="problema4.html">problema4</a><br>
+                </div>
+                <div>
+                    <a class="boton_5" href="problema5.html">problema5</a><br>
+                </div>
+                <div>
+                    <a class="boton_6" href="problema6.html">problema6</a><br>
+                </div>
+                <div>
+                    <a class="boton_7" href="problema7.html">problema7</a><br>
+                </div>
+                <div>
+                    <a class="boton_8" href="problema8.html">problema8</a><br>
+                </div>
+                <div>
+                    <a class="boton_9" href="problema9.html">problema9</a><br>
+                </div>
+                <div>
+                    <a class="boton_10" href="problema10.html">problema10</a><br>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contenedor_contenido">
+        <div class="contenedor_numero">
+            <div>
+                <h1>P</h1>
+            </div>
+            <div>
+                <h1>R</h1>
+            </div>
+            <div>
+                <h1>O</h1>
+            </div>
+            <div>
+                <h1>B</h1>
+            </div>
+            <div>
+                <h1>L</h1>
+            </div>
+            <div>
+                <h1>E</h1>
+            </div>
+            <div>
+                <h1>M</h1>
+            </div>
+            <div>
+                <h1>A</h1>
+            </div>
+            <br>
+            <div>
+                <h1>3</h1>
+            </div>
+        </div>
+
+        <div class="contenedor_problema">
+            <div class="texto">
+                <p>
+                    Aqui podras saber cuanto deberas de pagar por el total de tu compra tomando
+                    en cuenta el descuento del 15% del total
+                </p>
+                <br>
+                <p>
+                    Porfavor introduce los datos solicitados y despues presiona el boton calcular
+                </p>
+                <br>
+            </div>
+
+            <div class="contenedor_formulario">
+                <form class="formulario" method="get" name="formulario" action="problema3.html" >
+                    <div class="formulario_top">
+                        <div>
+                            <div>
+                                <p>¿Cual fue el total de sus productos?</p>
+                            </div>
+                            <div>
+                                <input type="text" placeholder="Total" name="total"
+                                onkeypress="return validar(event)" class="inputs">
+                            </div>
+                        </div>
+                        <div class="calcular">
+                            <input class="boton" type="button" value="Calcular" onclick="calcular()" >
+                        </div>                        
+                    </div>
+
+                    <div class="formulario_bottom">
+                        <div>
+                            <div>
+                                <p>El total a pagar es de</p>
+                            </div>
+                            <div>
+                                <input type="text" placeholder="Pagar" name="pagar" readonly class="inputs">
+                            </div>
+                        </div>
+                        <div>
+                            <input type="button" value="Borrar" onclick="borrar()" class="boton">
+                        </div>
+                    </div>                        
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="pie">
+        <footer class="contenedor_pie">
+            <div class="nombre">
+               <p>Silva Ramirez Usiel Gabriel</p>
+           </div>
+           <div class="grupo">
+               <p>4IV9</p>
+           </div>
+           <div class="matricula">
+               <p>2019090499</p>
+           </div>
+       </footer>
+    </div>
+    <script src="JS/menu.js"></script>
 </body>
 </html>

@@ -1,3 +1,273 @@
 *{
+    margin: 0;
+    padding: 0;    
+    font-size: 20px;
+    color: #F1A208;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    background-color: #F1A208;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+h1{
     font-size: 2rem;
+}
+
+.contenedor_navegacion{
+    display: flex; 
+    flex-wrap: wrap;
+    background-color: #052F5F;
+    
+}
+
+.navegacion_top{
+    width: 100%;
+    flex: 1;
+    text-align: center;
+}
+
+.menu_boton_bars{
+    margin: 10px;
+    /* display: flex; */
+    
+}
+
+.label_menu{
+    width: 50px;
+    height: 30px;
+    /* position: relative; */
+    cursor: pointer;
+}
+
+.label_menu #span_1, #span_2, #span_3{
+    position: absolute;
+    background: #F1A208;
+    width: 40px;
+    height: 4px;
+    border-radius: 5px;
+    transition: all 400ms ease;
+}
+
+#span_2{
+    top: 20px;
+}
+
+#span_3{
+    top: 30px;
+}
+
+#hamburguesa{
+    display: none;
+}
+
+#hamburguesa:checked ~ .label_menu #span_1{
+    transform: rotate(140deg);
+    top: 20px;
+}
+
+#hamburguesa:checked ~ .label_menu #span_2{
+    opacity: 0;
+}
+
+#hamburguesa:checked ~ .label_menu #span_3{
+    transform: rotate(-140deg);
+    top: 20px;
+}
+
+.navegacion_bottom{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #052F5F ;
+    border-right: 1px solid #F1A208;
+    width: 10%;
+    height: 93%;
+    opacity: 0.9;
+    padding: 30px;
+    text-align: center;       
+    transform: translateX(0px);
+    transition: transform 0.5s ease-in-out;
+}
+
+.mostrar{    
+    transform: translateX(-300px);
+    transition: transform 0.5s ease-in-out;
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+/* .navegacion_bottom div{
+	cursor: pointer;
+    margin: 5px 3px;       
+} */
+
+.menu div:hover{      
+    border-bottom: 2px solid #F1A208; 
+    padding: 10px;  
+}
+
+.menu div a{  
+    text-decoration: none;
+    background-color: #052F5F;
+    color: #F1A208;
+}
+
+.contenedor_contenido{
+    display: flex;
+}
+
+.contenedor_numero{  
+    flex: 2;
+    display: flex;      
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    background-color: #052F5F;
+    border-radius: 8px; 
+    margin: 4rem; 
+    margin-right: 2rem;   
+    padding: 2rem;
+}
+
+.contenedor_problema{
+    display: flex;
+    justify-content: space-evenly; 
+    flex-direction: column;
+    flex: 10;
+    width: 100%;
+    background-color: #052F5F;
+    border-radius: 8px;    
+    padding: 2rem;
+    margin: 4rem;
+    margin-left: 2rem;
+}
+
+.numeros{
+    padding: 2rem;
+    margin: 10rem;
+    margin-right: 5rem;
+
+}
+
+.inicio{
+    padding: 2rem;
+    margin: 10rem;
+    margin-left: 5rem;
+
+}
+
+.formulario{
+    display: flex;
+    justify-content: space-around;
+}
+
+.texto{
+    flex: 1;
+}
+
+.texto2{
+    text-align: center;
+    /* flex: 1; */
+}
+
+.contenedor_formulario{
+    flex: 2;    
+}
+
+.pie{
+    background-color: #052F5F;
+    padding: 2rem;
+}
+
+.contenedor_pie{
+    display: flex;  
+}
+
+.nombre, .grupo, .matricula{
+    flex: 1;
+    text-align: center;
+}
+
+.inputs{
+    font-size: 17px;
+    color: #052F5F;
+    width: 100%;
+	background: #D5C67A;
+    opacity: .3;
+	border: 3px solid transparent;
+	border-radius: 3px;
+	height: 45px;
+	padding: 0 10px; 
+    margin: 5px; 
+}
+
+select, .años{
+    color: #052F5F;
+    width: 20%;
+	background: #D5C67A;
+    opacity: .3;
+	border: 3px solid transparent;
+	border-radius: 3px;
+	height: 45px;
+	padding: 0 10px; 
+    margin: 5px;
+}
+
+select:active, .años:active{
+    color: #052F5F;
+	background: #D5C67A;
+    width: 20%;
+    opacity: .3;
+	border: 3px transparent;
+	border-radius: 3px;
+	height: 45px;
+	padding: 0 10px; 
+    margin: 5px;
+}
+
+.años{
+    width: 45%;
+}
+
+.años:active{
+    width: 45%;
+}
+
+.boton{
+    background: #F1A208;
+    color: #052F5F;
+    border: 3px solid transparent;
+	border-radius: 3px;
+	height: 45px;
+    cursor: pointer;
+    margin: 5px;
+    padding: 5px;
+    border: transparent;
+}
+
+.boton:hover{
+    background: #052F5F;
+    color: #F1A208;
+    opacity: 1;
+    border: transparent;
+}
+
+.boton:focus{
+    border: transparent;
+    text-decoration: none;
 }
